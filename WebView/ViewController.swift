@@ -7,14 +7,14 @@
 //
 
 import UIKit
-
+import WebKit
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var webview: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-
+        webview.load(URLRequest(url: URL(string: "https://www.linkedin.com/in/hany-karam-64335b193/")!))    }
+    
+    
 }
 
